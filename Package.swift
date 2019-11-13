@@ -7,6 +7,7 @@ let package = Package(
     name: "SwiftHEIF",
     products: [
         .library(name: "SwiftHEIF", targets: ["SwiftHEIF"]),
+        .library(name: "libheif_mac_umbrella", targets: ["SwiftHEIF"])
     ],
     targets: [
         .systemLibrary(name: "SwiftHEIF"),
