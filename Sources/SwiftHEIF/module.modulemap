@@ -1,0 +1,16 @@
+
+module libheif_linux [system] {
+//    sudo add-apt-repository ppa:strukturag/libheif
+//    sudo apt-get update
+//    sudo apt-get install libheif-dev
+    header "/usr/include/libheif/heif.h"
+    link "libheif"
+    export *
+}
+
+module libheif_mac [system] {
+//    brew install libheif
+    header " /usr/local/Cellar/libheif/1.6.0/include/libheif/heif.h"
+    link "libheif"
+    export *
+}
