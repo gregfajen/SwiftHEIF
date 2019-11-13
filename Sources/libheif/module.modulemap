@@ -1,33 +1,5 @@
 
-module heif {
-    umbrella header "swift_heif.h"
+module libheif {
+    umbrella header "libheif.h"
     
 }
-
-//module libheif_linux [system] {
-////    sudo add-apt-repository ppa:strukturag/libheif
-////    sudo apt-get update
-////    sudo apt-get install libheif-dev
-//    header "/usr/include/libheif/heif.h"
-//    link "libheif"
-//    export *
-//}
-//
-//module libheif_mac_umbrella [system] {
-//
-////    brew install libheif
-//
-//    umbrella header "libheif.h"
-//
-//    umbrella "/usr/local/Cellar/libheif/1.6.0/include/libheif/"
-//
-//    link "libheif"
-//    export *
-//}
-//
-//framework module SwiftHEIF {
-//    umbrella header "SwiftHEIF.h"
-//
-//    export *
-//    module * { export * }
-//}
