@@ -10,7 +10,7 @@ module libheif_linux [system] {
 
 module libheif_mac [system] {
 //    brew install libheif
-    header " /usr/local/Cellar/libheif/1.6.0/include/libheif/heif.h"
+    header "/usr/local/Cellar/libheif/1.6.0/include/libheif/heif.h"
     link "libheif"
     export *
 }
