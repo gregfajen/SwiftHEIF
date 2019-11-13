@@ -13,3 +13,5 @@
 #include "/usr/local/Cellar/libheif/1.6.0/include/libheif/heif.h"
 
 #endif
+
+typedef struct heif_encoder *heif_encoder_ptr;
