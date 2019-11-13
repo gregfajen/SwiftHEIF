@@ -6,11 +6,14 @@ import PackageDescription
 let package = Package(
     name: "SwiftHEIF",
     products: [
-        .library(name: "SwiftHEIF", targets: ["SwiftHEIF"]),
-        .library(name: "libheif_mac_umbrella", targets: ["SwiftHEIF"])
+        .library(name: "SwiftHEIF",
+                 targets: ["SwiftHEIF"]
+        ),
     ],
+    dependencies: [],
     targets: [
-        .systemLibrary(name: "SwiftHEIF"),
+           .systemLibrary(name: "libheif", pkgConfig: "libheif", providers: [.apt(["libheaf-dev"]), .brew(["libheaf"])]),
+           .target(name: "SwiftHEIF", dependencies: ["libheif"])
     ]
     
 //    pkgConfig: "wtf",
