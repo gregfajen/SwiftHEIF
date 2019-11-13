@@ -8,9 +8,11 @@ module libheif_linux [system] {
     export *
 }
 
-module libheif_mac [system] {
+module libheif_mac_umbrella [system] {
     
 //    brew install libheif
+
+    umbrella header "libheif.h"
 
     umbrella "/usr/local/Cellar/libheif/1.6.0/include/libheif/"
     
